@@ -9,7 +9,7 @@ WorkingDirectory=/var/lib/kubelet
 ExecStart=/root/local/bin/kubelet \
   --address=10.64.3.7 \
   --hostname-override=10.64.3.7 \
-  --pod-infra-container-image=registry.access.redhat.com/rhel7/pod-infrastructure:latest \
+  --pod-infra-container-image=registry.cn-hangzhou.aliyuncs.com/google-containers/pause-amd64:3.0 \
   --experimental-bootstrap-kubeconfig=/etc/kubernetes/bootstrap.kubeconfig \
   --kubeconfig=/etc/kubernetes/kubelet-kubeconfig \
   --require-kubeconfig \
